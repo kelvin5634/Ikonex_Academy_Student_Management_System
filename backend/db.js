@@ -1,18 +1,24 @@
-const mysql = require('mysql2/promise');
 require('dotenv').config();
+const mysql = require('mysql2/promise');
 
-const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  port: Number(process.env.DB_PORT) || 3306,
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'ikonex_academy_sms',
+
+//for railway  deployment
+const pool = mysql.createPool(process.env.DATABASE_URL);
+
+
+// for local development
+// const pool = mysql.createPool({
+//   host: process.env.DB_HOST || 'localhost',
+//   port: Number(process.env.DB_PORT) || 3306,
+//   user: process.env.DB_USER || 'root',
+//   password: process.env.DB_PASSWORD || '',
+//   database: process.env.DB_NAME || 'ikonex_academy_sms',
   
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0,
-  enableKeepAlive: true,
-});
+//   waitForConnections: true,
+//   connectionLimit: 10,
+//   queueLimit: 0,
+//   enableKeepAlive: true,
+// });
 
 // Optional: Test the connection when the file is loaded
 const testConnection = async () => {

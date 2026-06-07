@@ -37,7 +37,7 @@ export default function Login() {
         </div>
         <div>
           <h1 className="text-4xl font-bold leading-tight">Welcome back.<br/>Manage your school with ease.</h1>
-          <p className="text-brand-100/90 mt-4 text-lg">Streams, students, subjects, scores, and beautiful reports — all in one place.</p>
+          <p className="text-brand-100/90 mt-4 text-lg">Streams, students, subjects, scores, and beautiful reports, all in one place.</p>
         </div>
         <div className="text-brand-100/70 text-sm">© {new Date().getFullYear()} Ikonex Academy</div>
       </div>

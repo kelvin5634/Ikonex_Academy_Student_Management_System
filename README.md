@@ -27,7 +27,7 @@ Full-stack web app: **React + Vite (frontend)**, **Node.js + Express (backend)**
 ## Default admin
 ```
 Email:    admin@ikonex.com
-Password: admin123
+Password: admin@123
 ```
 
 ---
@@ -60,7 +60,7 @@ npm install
 npm run dev      # starts UI on http://localhost:3000
 ```
 
-Open http://localhost:3000 → log in with `admin@ikonex.com` / `admin123`.
+Open http://localhost:3000 → log in with `admin@ikonex.com` / `admin@123`.
 
 ---
 
